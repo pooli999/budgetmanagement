@@ -1,4 +1,4 @@
-aapp<?php
+หหหหห<?php
 include("config.php");
 include($KeyPage."_function.php");
 
