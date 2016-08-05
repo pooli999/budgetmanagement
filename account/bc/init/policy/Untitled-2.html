@@ -1,0 +1,150 @@
+<table width="100%" border="0" cellspacing="1" cellpadding="0" class="tbl-history-check">
+  <thead>
+    <tr>
+      <td style="width:100px; text-align:center;">ไตรมาสที่</td>
+      <td style="width:100px; text-align:center;">%ก้าวหน้าโครงการ</td>
+      <td style="width:100px; text-align:center;">ผลดำเนินการ</td>
+      <td style="width:100px; text-align:center;">ปัญหา/อุปสรรค</td>
+      <td style="width:100px; text-align:center;">ปัจจัยสนับสนุน</td>
+      <td style="text-align:center;">เอกสารแนบ</td>
+      <td style="width:100px; text-align:center;">หมายเหตุ</td>
+      <td style="width:80px; text-align:center;">ปฏิบัติการ</td>
+      </tr>
+    </thead>
+       <?php 
+unset($Progress,$PercentMass,$ProgressAmass,$PrjResult,$PrjProblem,$PrjFactor,$PrjResultId,$PrjComment);
+$detail12 = $get->getPrjResultDetail($PrjCode,12);//ltxt::print_r($detail12);
+foreach($detail12 as $drow){
+	foreach($drow as $k=>$v){
+		${$k} = $v;
+	}
+}
+?>    
+      
+       <tr style="vertical-align:top;">
+         <td style="text-align:center;">ไตรมาส1</td>
+      <td style="text-align:center;"><?php echo ($PrjProgressAmass12)?$PrjProgressAmass12:"-";?></td>
+      <td><?php echo ($PrjResult)?$PrjResult:'-';?></td>
+      <td><?php echo ($PrjProblem)?$PrjProblem:'-';?></td>
+      <td><?php echo ($PrjFactor)?$PrjFactor:'-';?></td>
+      <td>
+	  <?php  
+            
+		$MultiDocId = $get->getPrjLinkFiles($PrjResultId); 
+        FilesManager::LinkFilesView(array(
+                'ActiveObj' => 'MultiDocId11',
+                'ViewType' => 'multi',
+                'ActiveId' => $MultiDocId
+              //  'imgWidth' => $imgWidth,
+               // 'imgHeight' => $imgHeight
+            ));
+        
+        ?>    
+      </td>
+      <td><?php echo ($PrjComment)?$PrjComment:'-';?></td>
+      <td style="text-align:center;"><?php echo icoPrjResult($PrjDetailId,12); ?></td>
+      </tr> 
+
+
+       <?php 
+unset($Progress,$PercentMass,$ProgressAmass,$PrjResult,$PrjProblem,$PrjFactor,$PrjResultId,$PrjComment); 
+$detail3 = $get->getPrjResultDetail($PrjCode,3);//ltxt::print_r($detail);
+foreach($detail3 as $drow){
+	foreach($drow as $k=>$v){
+		${$k} = $v;
+	}
+}
+?>       
+       <tr style="vertical-align:top;">
+         <td style="text-align:center;">ไตรมาส2</td>
+      <td style="text-align:center;"><?php echo ($PrjProgressAmass3)?$PrjProgressAmass3:"-";?></td>
+      <td><?php echo ($PrjResult)?$PrjResult:'-';?></td>
+      <td><?php echo ($PrjProblem)?$PrjProblem:'-';?></td>
+      <td><?php echo ($PrjFactor)?$PrjFactor:'-';?></td>
+      <td>
+	  <?php  
+            
+		$MultiDocId = $get->getPrjLinkFiles($PrjResultId); 
+        FilesManager::LinkFilesView(array(
+                'ActiveObj' => 'MultiDocId3',
+                'ViewType' => 'multi',
+                'ActiveId' => $MultiDocId
+              //  'imgWidth' => $imgWidth,
+               // 'imgHeight' => $imgHeight
+            ));
+        
+        ?>    
+      </td>
+      <td><?php echo ($PrjComment)?$PrjComment:'-';?></td>
+      <td style="text-align:center;"><?php echo icoPrjResult($PrjDetailId,3); ?></td>
+      </tr> 
+ 
+ 
+       <?php 
+unset($Progress,$PercentMass,$ProgressAmass,$PrjResult,$PrjProblem,$PrjFactor,$PrjResultId,$PrjComment);
+$detail6 = $get->getPrjResultDetail($PrjCode,6);//ltxt::print_r($detail);
+foreach($detail6 as $drow){
+	foreach($drow as $k=>$v){
+		${$k} = $v;
+	}
+}
+?>       
+       <tr style="vertical-align:top;">
+         <td style="text-align:center;">ไตรมาส3</td>
+      <td style="text-align:center;"><?php echo ($PrjProgressAmass6)?$PrjProgressAmass6:"-";?></td>
+      <td><?php echo ($PrjResult)?$PrjResult:'-';?></td>
+      <td><?php echo ($PrjProblem)?$PrjProblem:'-';?></td>
+      <td><?php echo ($PrjFactor)?$PrjFactor:'-';?></td>
+      <td>
+	  <?php  
+            
+		$MultiDocId = $get->getPrjLinkFiles($PrjResultId); 
+        FilesManager::LinkFilesView(array(
+                'ActiveObj' => 'MultiDocId6',
+                'ViewType' => 'multi',
+                'ActiveId' => $MultiDocId
+              //  'imgWidth' => $imgWidth,
+               // 'imgHeight' => $imgHeight
+            ));
+        
+        ?>    
+      </td>
+      <td><?php echo ($PrjComment)?$PrjComment:'-';?></td>
+      <td style="text-align:center;"><?php echo icoPrjResult($PrjDetailId,6); ?></td>
+      </tr> 
+
+
+       <?php 
+unset($Progress,$PercentMass,$ProgressAmass,$PrjResult,$PrjProblem,$PrjFactor,$PrjResultId,$PrjComment); 
+$detail9 = $get->getPrjResultDetail($PrjCode,9);//ltxt::print_r($detail);
+foreach($detail9 as $drow){
+	foreach($drow as $k=>$v){
+		${$k} = $v;
+	}
+}
+?>       
+
+       <tr style="vertical-align:top;">
+         <td style="text-align:center;">ไตรมาส4</td>
+         <td style="text-align:center;"><?php echo ($PrjProgressAmass9)?$PrjProgressAmass9:"-";?></td>
+         <td><?php echo ($PrjResult)?$PrjResult:'-';?></td>
+         <td><?php echo ($PrjProblem)?$PrjProblem:'-';?></td>
+         <td><?php echo ($PrjFactor)?$PrjFactor:'-';?></td>
+         <td>
+           <?php  
+                
+            $MultiDocId = $get->getPrjLinkFiles($PrjResultId); 
+            FilesManager::LinkFilesView(array(
+                    'ActiveObj' => 'MultiDocId9',
+                    'ViewType' => 'multi',
+                    'ActiveId' => $MultiDocId
+                  //  'imgWidth' => $imgWidth,
+                   // 'imgHeight' => $imgHeight
+                ));
+            
+            ?>    
+           </td>
+         <td><?php echo ($PrjComment)?$PrjComment:'-';?></td>
+         <td style="text-align:center;"><?php echo icoPrjResult($PrjDetailId,9); ?></td>
+        </tr> 
+     </table>

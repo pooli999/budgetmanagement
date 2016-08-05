@@ -1,0 +1,433 @@
+/* CSS Document */
+/*ตารางรายการงบรายจ่าย*/
+.tbl-cost {
+	border-collapse:collapse;
+}
+.tbl-cost th {
+	border:1px solid #999;
+	text-align:center;
+	padding:3px;
+	background-color:#CCC;
+}
+.tbl-cost td {
+	border:1px solid #999;
+	padding:3px;
+}
+.tbl-cost .cate {
+	background-color:#dbdbdb;
+	font-weight:bold;
+}
+.tbl-cost .level1 {
+	background-color:#eee;
+}
+.tbl-cost .total {
+	font-weight:bold;
+}
+/*END ตารางรายการงบรายจ่าย*/
+/*Icon*/
+.icon-decre {
+	background:url(../../../images/bullet/minimize.gif) left center no-repeat;
+	padding-left:16px;
+}
+.icon-incre {
+	background:url(../../../images/bullet/maximize.gif) left center no-repeat;
+	padding-left:16px;
+}
+.icon-month {
+	background:url(../../../images/calendar.gif) left center no-repeat;
+	padding-left:18px;
+}
+.icon-close {
+	background:url(../../../images/budget/lock.png) left center no-repeat;
+	padding-left:18px;
+}
+/*END Icon*/
+.txt-normal {
+	font-weight:normal;
+}
+
+.number-normal {
+	text-align:right;
+	background-color:#E4EDED;
+}
+
+.number-sum {
+	text-align:right;
+	background-color:#EDEB82;
+}
+
+.title-sheet {
+	 font-weight:bold; 
+	 padding:5px; 
+	 background-color:#999; 
+	 width:300px; 
+	 border-top:1px solid #333; 
+	 border-right:1px solid #333;
+	 color:#FFF;
+
+}
+
+.title-sheet-sub {
+	background-color:#CCC; 
+	border:solid #FFF 1px; 
+	cursor: pointer; 
+	font-weight:bold; 
+	color:#000;
+	padding:3px;
+	/*opacity:.5;*/
+}
+
+.icon-eye-close {
+	background:url(../../../images/budget/eye_close.png) left center no-repeat;
+	padding-left:18px;
+}
+.icon-eye-open {
+	background:url(../../../images/budget/eye_open.png) left center no-repeat;
+	padding-left:18px;
+}
+
+.icon-type {
+	background:url(../../../images/budget/bullet01.gif) left center no-repeat;
+	padding-left:18px;
+}
+
+.icon-allot {
+	background:url(../../../images/budget/dollar-sub.png) left center no-repeat;
+	padding-left:20px;
+}
+
+.icon-prj-index {
+	background:url(../../../images/budget/knode.png) left center no-repeat;
+	padding-left:20px;
+}
+
+.icon-topic {
+	font-weight:bold;
+	padding:3px 3px 3px 25px;
+	background-image: url(../../../images/budget/comment.png);
+	background-repeat:no-repeat;
+	background-position:3px 4px;
+	color:#FFF;
+}
+
+
+
+
+.boxfilter-sub{
+	padding:5px 5px 5px 5px;
+	color:#333;
+	font-weight:bold;
+	border-bottom:1px solid #535e74;
+	background-color:#ccc;
+}
+
+.title-main{
+	/*background-color:#89D2EC;*/
+	background-color:#684082;
+	border-bottom:1px solid #666666;
+	font-weight:bold;
+	padding:5px 5px 5px 27px;
+	background-image: url(../../../images/budget/comment.png);
+	background-repeat:no-repeat;
+	background-position:5px 5px;
+	/*color:#DFDB37;*/
+}
+
+.txtblue{ color:#003399;}
+.txtred{ color:#900; }
+.txtwhite{ color:#fff; }
+.txtbold{ font-weight:bold; }
+.txtline{ line-height:180%; }
+.alignhead{ text-align:left; }
+.txthead{ color:#684082; }
+.txtmagin5{ margin-top:5px; }
+.txtmagin10{ margin-top:10px; }
+
+
+.txtright{
+text-align:right; 
+width:120px;
+float:left;
+}
+
+.tabselect{ 
+width:130px; 
+text-align:center;
+background-color:#999999;
+border-top:3px solid #990000;
+/*border-bottom:3px solid #990000;
+*/border-left:3px solid #990000;
+border-right:3px solid #990000;
+}
+
+.tabdefault{ 
+width:130px; 
+text-align:center;
+background-color:#EEEEEE;
+border-top:3px solid #999999;
+border-bottom:3px solid #999999;
+}
+
+.title-white{
+	background-color:#fff;
+	border-bottom:1px solid #666666;
+	font-weight:bold;
+	height:21px;
+	padding-top:5px;
+	/*background-image: url(../../images/budget/tooloptions.png);
+	background-repeat:no-repeat;
+	background-position:5px 5px;*/
+}
+
+.title-grey{
+	background-color:#eee;
+	/*font-weight:bold;
+	height:22px;*/
+	padding:8px;
+}
+
+.title-grey2{
+	background-color:#eee;
+	border-bottom:1px solid #666666;
+	font-weight:bold;
+	height:21px;
+	padding-top:5px;
+}
+
+
+.topic-main {
+	 font-weight:bold; 
+	/* padding:5px; */
+	 /*background-color:#89D2EC; */
+	 width:20%; 
+	 border-top:1px solid #333; 
+	 border-right:1px solid #333;
+	 color:#FFF;
+
+}
+
+.step {
+	background:url(../../../images/flagred.gif) left center no-repeat;
+	padding-left:16px;
+}
+
+.topic-step{
+	border-bottom:1px solid #666666;
+	background-color:#EDEB8F;
+	font-weight:bold;
+	height:30px;
+	padding:10px;
+	padding-left:40px;
+	background-image: url(../../../images/dollar.png);
+	background-repeat:no-repeat;
+	background-position:5px 5px;
+	font-size:20px;
+	
+}
+
+.topic-cost-main {
+	 padding:5px; 
+	 background:url(../../../images/budget/money_dollar.png) left center no-repeat;
+	 padding-left:18px;
+	 background-color:#008998; 
+	 color:#FFF; 
+	 font-weight:bold;
+	 margin-bottom:1px;
+}
+
+
+.topic-cost-title {
+	 padding:3px; 
+	 background:url(../../../images/budget/money_dollar.png) center center no-repeat;
+	 background-color:#008998; 
+	 float:left; 
+	 width:15px;
+}
+
+.topic-cost {
+	 padding:3px; 
+	 background-color:#30cdd7; 
+	 font-weight:bold;
+	 margin-bottom:1px;
+}
+
+.sub-topic-cost {
+	 padding:3px; 
+	 background:url(../../../images/budget/bullet02.gif) left center no-repeat;
+	 padding-left:18px;
+	 background-color:#c0ddea; 
+	 font-weight:bold;
+}
+.no-record {
+	 text-align:center; 
+	 color:#999; 
+	 padding:8px; 
+	 background-color:#EEE;
+}
+
+
+
+
+.page-title td {
+	background-color:#FFEEFF;
+	border-bottom:1px dashed #999;
+}
+.page-title .font1 {
+	font-size:28px; 
+	margin-bottom:5px;
+}
+.page-title .font2 {
+	font-size:16px; 
+	color:#990000;
+}
+
+.page-title-user td {
+	background-color:#d7eb9c;
+	border-bottom:1px dashed #999;
+}
+.page-title-user .font1 {
+	font-size:28px; 
+	margin-bottom:5px;
+}
+.page-title-user .font2 {
+	font-size:16px; 
+	color:#990000;
+}
+
+.title-step {
+	padding:5px;
+	background-color:#eeebac;
+	color:#417630;
+}
+
+.div-title-project {
+	 background:url(../../../images/budget/4_11.jpg) left center no-repeat;
+	 padding:5px; 
+	 height:60px; 
+	 width:60px; 
+	 border-bottom:1px dashed #999;
+}
+
+.div-title-check {
+	 background:url(../../../images/budget/9_33.png) left center no-repeat;
+	 padding:5px; 
+	 height:60px; 
+	 width:60px; 
+	 border-bottom:1px dashed #999;
+}
+
+.div-title-allot {
+	 background:url(../../../images/budget/6_11.png) left center no-repeat;
+	 padding:5px; 
+	 height:60px; 
+	 width:60px; 
+	 border-bottom:1px dashed #999;
+}
+
+.div-title-close {
+	 background:url(../../../images/budget/14_41.jpg) left center no-repeat;
+	 padding:5px; 
+	 height:60px; 
+	 width:60px; 
+	 border-bottom:1px dashed #999;
+}
+
+.div-title-next {
+	 background:url(../../../images/budget/Right.png) left center no-repeat;
+	 padding:5px; 
+	 height:60px; 
+	 width:60px; 
+	 border-bottom:1px dashed #999;
+}
+
+.div-title-plan {
+	 background:url(../../../images/budget/6_29.png) left center no-repeat;
+	 padding:5px; 
+	 height:60px; 
+	 width:60px; 
+	 border-bottom:1px dashed #999;
+}
+
+.div-title-result {
+	 background:url(../../../images/budget/6_21.png) left center no-repeat;
+	 padding:5px; 
+	 height:60px; 
+	 width:60px; 
+	 border-bottom:1px dashed #999;
+}
+
+.title-result-month{
+	padding:3px; 
+	background:url(../../../images/budget/calendar.png) left center no-repeat;
+	padding-left:18px;
+	background-color:#CCCCFF; 
+	font-weight:bold;
+}
+
+
+
+.tbl-tab .current {
+	width:120px; 
+	padding:5px; 
+	border:1px solid #9e676f; 
+	border-bottom:8px solid #9e676f; 
+	text-align:center; 
+	background-color:#b8858d; 
+	font-weight:bold;
+}
+.tbl-tab .notcurrent {
+	width:120px; 
+	border:1px solid #9e676f; 
+	border-bottom:8px solid #9e676f; 
+	text-align:center; 
+	background-color:#e3cacb;
+}
+.tbl-tab .line {
+	border-bottom:8px solid #9e676f;
+}
+
+.icon-word {
+	background:url(../../../images/filetype/doc.gif) left center no-repeat;
+	padding-left:18px;
+}
+
+.icon-excel {
+	background:url(../../../images/filetype/xls.gif) left center no-repeat;
+	padding-left:18px;
+}
+.icon-printer {
+	background:url(../../../images/budget/printer.png) left center no-repeat;
+	padding-left:18px;
+}
+
+.tbl-button td {
+	padding:5px;
+	background-color:#f1eb9c;
+}
+
+.nullDataList{
+	background-color:#EEE;
+}
+
+.sum-total {
+	text-align:right;
+	font-size:10px;
+}
+
+.icon-load {
+	background:url(../../../images/budget/icon_loading.gif) left center no-repeat;
+	padding-left:18px;
+}
+
+.boxfilter2{
+	border-bottom:1px solid #6d6e83;
+	background-color:#a6a5b3;
+	padding:2px;
+	/*margin:5px 0 3px 0;*/
+	color:#333;
+}
+
+
+
+
+

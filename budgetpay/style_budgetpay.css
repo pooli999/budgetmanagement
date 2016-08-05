@@ -1,0 +1,309 @@
+/* CSS Document */
+/*ตารางรายการงบรายจ่าย*/
+.tbl-cost {
+	border-collapse:collapse;
+}
+.tbl-cost th {
+	border:1px solid #999;
+	text-align:center;
+	padding:3px;
+	background-color:#CCC;
+}
+.tbl-cost td {
+	border:1px solid #999;
+	padding:3px;
+}
+.tbl-cost .cate {
+	background-color:#dbdbdb;
+	font-weight:bold;
+}
+.tbl-cost .level1 {
+	background-color:#eee;
+}
+.tbl-cost .total {
+	font-weight:bold;
+}
+/*END ตารางรายการงบรายจ่าย*/
+/*Icon*/
+.icon-decre {
+	background:url(../../../images/bullet/minimize.gif) left center no-repeat;
+	padding-left:16px;
+}
+.icon-incre {
+	background:url(../../../images/bullet/maximize.gif) left center no-repeat;
+	padding-left:16px;
+}
+/*END Icon*/
+.txt-normal {
+	font-weight:normal;
+}
+
+.number-normal {
+	text-align:right;
+	background-color:#E4EDED;
+}
+
+.number-sum {
+	text-align:right;
+	background-color:#EDEB82;
+}
+
+.title-sheet {
+	 font-weight:bold; 
+	 padding:5px; 
+	 background-color:#999; 
+	 width:300px; 
+	 border-top:1px solid #333; 
+	 border-right:1px solid #333;
+	 color:#FFF;
+
+}
+
+.title-sheet-sub {
+	background-color:#CCC; 
+	border:solid #FFF 1px; 
+	cursor: pointer; 
+	font-weight:bold; 
+	color:#000;
+	padding:3px;
+	/*opacity:.5;*/
+}
+
+.icon-up {
+	background:url(../../../images/budget/arrow-up.gif) left center no-repeat;
+	padding-left:16px;
+}
+
+.icon-eye-close {
+	background:url(../../../images/budget/eye_close.png) left center no-repeat;
+	padding-left:18px;
+}
+.icon-eye-open {
+	background:url(../../../images/budget/eye_open.png) left center no-repeat;
+	padding-left:18px;
+}
+
+.icon-type {
+	background:url(../../../images/budget/bullet01.gif) left center no-repeat;
+	padding-left:18px;
+}
+
+.icon-topic {
+	font-weight:bold;
+	padding:3px 3px 3px 25px;
+	background-image: url(../../../images/budget/comment.png);
+	background-repeat:no-repeat;
+	background-position:3px 4px;
+	color:#FFF;
+}
+
+
+.boxfilter-sub{
+	padding:5px 5px 5px 5px;
+	color:#333;
+	font-weight:bold;
+	border-bottom:1px solid #535e74;
+	background-color:#ccc;
+}
+
+.title-main{
+	/*background-color:#89D2EC;*/
+	background-color:#684082;
+	border-bottom:1px solid #666666;
+	font-weight:bold;
+	padding:5px 5px 5px 27px;
+	background-image: url(../../../images/budget/comment.png);
+	background-repeat:no-repeat;
+	background-position:5px 5px;
+	/*color:#DFDB37;*/
+}
+
+.txtblue{ color:#003399;}
+.txtred{ color:#900; }
+.txtwhite{ color:#fff; }
+.txtbold{ font-weight:bold;}
+
+.txtright{
+text-align:right; 
+width:120px;
+float:left;
+}
+
+.tabselect{ 
+width:130px; 
+text-align:center;
+background-color:#999999;
+border-top:3px solid #990000;
+/*border-bottom:3px solid #990000;
+*/border-left:3px solid #990000;
+border-right:3px solid #990000;
+}
+
+.tabdefault{ 
+width:130px; 
+text-align:center;
+background-color:#EEEEEE;
+border-top:3px solid #999999;
+border-bottom:3px solid #999999;
+}
+
+.title-white{
+	background-color:#fff;
+	border-bottom:1px solid #666666;
+	font-weight:bold;
+	height:21px;
+	padding-top:5px;
+	/*background-image: url(../../images/budget/tooloptions.png);
+	background-repeat:no-repeat;
+	background-position:5px 5px;*/
+}
+
+.title-grey{
+	background-color:#eee;
+	font-weight:bold;
+	height:22px;
+	padding-top:3px;
+}
+
+.title-grey2{
+	background-color:#eee;
+	border-bottom:1px solid #666666;
+	font-weight:bold;
+	height:21px;
+	padding-top:5px;
+}
+
+
+.topic-main {
+	 font-weight:bold; 
+	/* padding:5px; */
+	 /*background-color:#89D2EC; */
+	 width:20%; 
+	 border-top:1px solid #333; 
+	 border-right:1px solid #333;
+	 color:#FFF;
+
+}
+
+/*CSS สำหรับระบบงานงบประมาณ*/
+.tbl-sumary {
+	border:1px solid #FFF;
+	border-collapse:collapse;
+}
+.tbl-sumary th {
+	border:1px solid #FFF;
+	background-color:#009999;
+	color:#FFF;
+	padding:3px;
+}
+.tbl-sumary td {
+	border:1px solid #EEE;
+	padding:3px;
+}
+.tbl-sumary .tr-plan {
+	background-color:#9ed6d3;
+	font-weight:bold;
+}
+.tbl-sumary .tr-plan td {
+	color:#333;
+}
+.tbl-sumary .tr-project {
+	background-color:#FFCCCC;
+}
+.tbl-sumary .tr-project td {
+	color:#333;
+	border:1px solid #FFF;
+	font-weight:bold;
+}
+.tbl-sumary .tr-sum {
+	background-color:#009999;
+	font-weight:bold;
+	color:#FFF;
+	text-align:right;
+}
+.txt-brown-center {
+	color:#999;
+	text-align:center;
+}
+.topic-break {
+	font-weight:bold;
+	color:#333;
+	padding:3px;
+	background-color:#FCC;
+}
+.txt-red {
+	color:#FF0000;
+}
+.txt-brown {
+	color:#999;
+}
+.ico-pass {
+	background:url(../../../images/budget/enabled.gif) left center no-repeat;
+	padding-left:18px;
+}
+.ico-reject {
+	background:url(../../../images/budget/arrow_redo.png) left center no-repeat;
+	padding-left:18px;
+}
+.ico-view {
+	background:url(../../../images/budget/kappfinder.png) left center no-repeat;
+	padding-left:18px;
+}
+
+.number {
+	text-align:right;
+	font-size:12px;
+	color:#333;
+}
+
+
+.icon-col0 {
+	background:url(../../../images/indicator/0.png) left center no-repeat;
+	padding-left:16px;
+}
+.icon-col1 {
+	background:url(../../../images/indicator/1.png) left center no-repeat;
+	padding-left:16px;
+}
+.icon-col2 {
+	background:url(../../../images/indicator/2.png) left center no-repeat;
+	padding-left:16px;
+}
+.icon-col3 {
+	background:url(../../../images/indicator/3.png) left center no-repeat;
+	padding-left:16px;
+}
+.icon-col4 {
+	background:url(../../../images/indicator/4.png) left center no-repeat;
+	padding-left:16px;
+}
+.icon-col5 {
+	background:url(../../../images/indicator/5.png) left center no-repeat;
+	padding-left:16px;
+}
+
+.icon-excel {
+	background:url(../../../images/filetype/xls.gif) left center no-repeat;
+	padding-left:18px;
+}
+.icon-printer {
+	background:url(../../../images/budget/printer.png) left center no-repeat;
+	padding-left:18px;
+}
+
+.icon-attach {
+	background:url(../../../images/attach.png) left center no-repeat;
+	padding-left:18px;
+}
+
+.boxfilter2{
+	border-bottom:1px solid #6d6e83;
+	background-color:#a6a5b3;
+	padding:2px;
+	/*margin:5px 0 3px 0;*/
+	color:#333;
+}
+
+
+
+

@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+.tbl-list-sub {
+	border-collapse:collapse;
+}
+.tbl-list-sub thead td {
+	text-align:center;
+	font-weight:bold;
+	border:1px solid #999;
+	background-color:#9CC;
+}
+.tbl-list-sub td {
+	border:1px solid #999;
+}
+
+.tbl-list .sum-total {
+	text-align:right;
+	font-size:10px;
+}
+
+.tbl-history-check thead td {
+	text-align:center;
+	background-color:#CCCCFF;
+}
+
+.tbl-history-check tbody td {
+	border-bottom:1px dotted #CCC;
+	background-color:#FFF;
+}
+
+.tbl-history-check2 thead td {
+	text-align:center;
+	background-color:#DDD;
+}
+
+.tbl-history-check2 tbody td {
+	border-bottom:1px dotted #DDD;
+	background-color:#FFF;
+}
+
+
+.txt-red {
+	color:#FF0000;
+}
+
+.txt-brown {
+	color:#999;
+}
+.icon-copy {
+	background:url(../../../images/filetype/copy.png) left center no-repeat;
+	padding-left:18px;
+}
+.ico-pass {
+	background:url(../../../images/budget/enabled.gif) left center no-repeat;
+	padding-left:18px;
+}
+
+.ico-reject {
+	background:url(../../../images/budget/arrow_redo.png) left center no-repeat;
+	padding-left:18px;
+}
+
+.ico-view {
+	background:url(../../../images/budget/kappfinder.png) left center no-repeat;
+	padding-left:18px;
+}
+
+.tbl-search th {
+	width:200px; 
+	text-align:left; 
+	font-weight:bold;
+	/*border-bottom:1px dotted #999;*/
+}
+.tbl-search td {
+	text-align:left; 
+	/*border-bottom:1px dotted #999;*/
+}
+
+
+.topic-report {
+	 text-align:right; 
+	 border-bottom:1px solid #999; 
+	 padding:10px; 
+	 margin-bottom:10px;
+	 font-size:14px;
+}
+.tbl-report th {
+	text-align:left;
+	width:180px;
+	padding:3px;
+}
+.tbl-report-list {
+	border:1px solid #999;
+	border-collapse:collapse;
+	margin-bottom:10px;
+}
+.tbl-report-list th {
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #999;
+	padding:3px;
+	vertical-align:top;
+}
+.tbl-report-list td {
+	border:1px solid #999;
+	padding:3px;
+}
+
+
