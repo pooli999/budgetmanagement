@@ -99,6 +99,10 @@ function icoDelete($r){
 			window.location.href= url;
 		}
 	}
+	function saveToExcel(PaymentId){
+
+		window.location.href="/modules/budgetmanagement/account/generaljournal/word.php?PaymentId="+PaymentId;
+	}
 /* ]]> */
 </script>
 <style type="text/css">
@@ -109,7 +113,6 @@ function icoDelete($r){
 }
 -->
 </style>
-
 
 <div class="sysinfo">
   <div class="sysname"><?php echo $MenuName;?></div>
@@ -185,13 +188,14 @@ JQ(document).ready(function() {
     <th align="center" style="width:100px;">วันที่จ่าย</th>
 			<th align="center" style="width:60px;">รายการ<br>เพิ่มเอง</th>
     <th colspan="2" style="text-align:center;width:60px;" >ปฏิบัติการ</th>
+		<th align="center" style="width:120px;">ใบสำคัญจ่าย</th>
     </tr>
 <thead>
   <tr>
-    <td height="24" colspan="10" background="../../../../images/bg.jpg"><span class="style9">&nbsp;&nbsp;<img src="../../../../images/edit_s.jpg" width="16" height="16" /> <span class="style1">F2-Edit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "cursor: pointer;" title = "เพิ่ม" id = "add1" onclick="goPage('?mod=<?php echo lurl::dotPage($addPage);?>1&jid=<?php echo $_REQUEST["jid"];?>&jtxt=<?php echo $_REQUEST["jtxt"]?>');"><img src="../../../../images/add_s.jpg" width="16" height="16" /><span class="style1">F3-Add</span></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "cursor: pointer;" title = "ค้นหา" id = "search1" onclick="JQ('#boxSearch').show();JQ('#boxFilter').hide();"><img src="../../../../images/search_s.jpg" width="16" height="16" /><span class="style1"> F6-Search</span></span><span class="style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../../../images/esc_s.png" width="16" height="16" /> </span><span class="style1">Esc-Exit</span></td>
+    <td height="24" colspan="11" background="../../../../images/bg.jpg"><span class="style9">&nbsp;&nbsp;<img src="../../../../images/edit_s.jpg" width="16" height="16" /> <span class="style1">F2-Edit</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "cursor: pointer;" title = "เพิ่ม" id = "add1" onclick="goPage('?mod=<?php echo lurl::dotPage($addPage);?>1&jid=<?php echo $_REQUEST["jid"];?>&jtxt=<?php echo $_REQUEST["jtxt"]?>');"><img src="../../../../images/add_s.jpg" width="16" height="16" /><span class="style1">F3-Add</span></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "cursor: pointer;" title = "ค้นหา" id = "search1" onclick="JQ('#boxSearch').show();JQ('#boxFilter').hide();"><img src="../../../../images/search_s.jpg" width="16" height="16" /><span class="style1"> F6-Search</span></span><span class="style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../../../images/esc_s.png" width="16" height="16" /> </span><span class="style1">Esc-Exit</span></td>
     </tr>
 	<tr>
-    <td colspan="10" bgcolor="E6E6E6" height="15"></td>
+    <td colspan="11" bgcolor="E6E6E6" height="15"></td>
     </tr>
 </thead>
 <tbody>
@@ -284,6 +288,9 @@ JQ(document).ready(function() {
 		<?php }else{?>
 			-
 		<?php }?>
+	</td>
+	<td align="center" valign="top" nowrap="nowrap" style="width:30px;"  >
+		<a href="javascript:saveToExcel(<?php echo $PaymentId ;?>);" class="icon-excel"></a>
 	</td>
   </tr>
 
